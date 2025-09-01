@@ -25,8 +25,8 @@ const Couple: React.FC = () => {
         </h2>
       </div>
 
-      {/* Content with padding to avoid Sidebar */}
-      <div className="max-w-6xl mx-auto flex flex-col gap-32 px-6 md:px-[calc(2rem+16rem)]">
+      {/* Content */}
+      <div className="max-w-7xl mx-auto flex flex-col gap-32 px-6 md:px-[calc(2rem+16rem)]">
         {/* Female left, text right */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-16 md:gap-28">
           <motion.div
@@ -48,12 +48,12 @@ const Couple: React.FC = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="md:w-1/2 w-full flex flex-col justify-center space-y-6 break-words overflow-hidden"
+            className="md:flex-1 w-full flex flex-col justify-center break-words overflow-hidden"
           >
-            <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed">
-              From the moment we met, her smile lit up my world. Our journey 
-              together has been filled with laughter, adventures, and 
-              unforgettable memories. Every day, our bond grows stronger.
+            <p
+              className={`text-emerald-500 text-lg sm:text-xl md:text-2xl leading-relaxed ${greatVibes.className}`}
+            >
+              From shared service and sacred spaces, To hearts that found rhythm in quiet embraces, We began as friends, drawn not just to each other, But to a purpose higher—God, our Father. Each step divinely written, each path gently led, Not by chance, but by the One who knows what’s ahead. Ours is a love story heaven alone could compose—A sacred script in which we humbly chose To play our part with reverent grace, In the light of His will, in love’s holy place.
             </p>
           </motion.div>
         </div>
@@ -79,12 +79,12 @@ const Couple: React.FC = () => {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="md:w-1/2 w-full flex flex-col justify-center space-y-6 break-words overflow-hidden"
+            className="md:flex-1 w-full flex flex-col justify-center break-words overflow-hidden"
           >
-            <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed">
-              His love has always been my safe haven. Together, we’ve shared 
-              dreams, challenges, and countless moments of joy. Our story is 
-              one of true love and unbreakable connection.
+            <p
+              className={`text-emerald-500 text-lg sm:text-xl md:text-2xl leading-relaxed ${greatVibes.className}`}
+            >
+              With you, I’ve discovered steady joy and a connection that feels both natural and guided. You are my companion, my friend, and my blessing. Every moment we share reflects God’s hand in our story, and I am grateful for the journey we walk together with trust, respect, and love.
             </p>
           </motion.div>
         </div>

@@ -38,8 +38,8 @@ const payments: PaymentOption[] = [
   {
     name: "Wise",
     logo: WiseLogo.src,
-    accountName: "John & Jane Doe",
-    accountNumber: "1122334455",
+    accountName: "Jude Ugochukwu Ogaziechi",
+    accountNumber: "232742039",
     link: "https://wise.com/send-money",
   },
   {
