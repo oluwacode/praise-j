@@ -18,6 +18,7 @@ const countries = [
   { name: "Kenya", code: "KE", dial: "+254" },
   { name: "Australia", code: "AU", dial: "+61" },
   { name: "New Zealand", code: "NZ", dial: "+64" },
+  { name: "Georgia", code: "GE", dial: "+995"},
 ];
 
 function generateInviteCode(length: number = 4) {
