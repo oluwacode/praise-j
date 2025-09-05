@@ -5,11 +5,16 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import FemalePic from "../assets/Images/Praise3.jpg";
 import MalePic from "../assets/Images/Jude2.jpg";
-import { Great_Vibes } from "next/font/google";
+import { Great_Vibes, Poppins } from "next/font/google";
 
 const greatVibes = Great_Vibes({
   subsets: ["latin"],
   weight: "400",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"], // adjust weights if needed
 });
 
 const Couple: React.FC = () => {
@@ -51,9 +56,16 @@ const Couple: React.FC = () => {
             className="md:flex-1 w-full flex flex-col justify-center break-words overflow-hidden"
           >
             <p
-              className={`text-emerald-500 text-lg sm:text-xl md:text-2xl leading-relaxed ${greatVibes.className}`}
+              className={`text-emerald-500 text-lg sm:text-xl md:text-2xl leading-relaxed ${poppins.className}`}
             >
-              From shared service and sacred spaces, To hearts that found rhythm in quiet embraces, We began as friends, drawn not just to each other, But to a purpose higher—God, our Father. Each step divinely written, each path gently led, Not by chance, but by the One who knows what’s ahead. Ours is a love story heaven alone could compose—A sacred script in which we humbly chose To play our part with reverent grace, In the light of His will, in love’s holy place.
+              From shared service and sacred spaces, To hearts that found rhythm
+              in quiet embraces, We began as friends, drawn not just to each
+              other, But to a purpose higher—God, our Father. Each step divinely
+              written, each path gently led, Not by chance, but by the One who
+              knows what’s ahead. Ours is a love story heaven alone could
+              compose—A sacred script in which we humbly chose To play our part
+              with reverent grace, In the light of His will, in love’s holy
+              place.
             </p>
           </motion.div>
         </div>
@@ -82,9 +94,13 @@ const Couple: React.FC = () => {
             className="md:flex-1 w-full flex flex-col justify-center break-words overflow-hidden"
           >
             <p
-              className={`text-emerald-500 text-lg sm:text-xl md:text-2xl leading-relaxed ${greatVibes.className}`}
+              className={`text-emerald-500 text-lg sm:text-xl md:text-2xl leading-relaxed ${poppins.className}`}
             >
-              With you, I’ve discovered steady joy and a connection that feels both natural and guided. You are my companion, my friend, and my blessing. Every moment we share reflects God’s hand in our story, and I am grateful for the journey we walk together with trust, respect, and love.
+              With you, I’ve discovered steady joy and a connection that feels
+              both natural and guided. You are my companion, my friend, and my
+              blessing. Every moment we share reflects God’s hand in our story,
+              and I am grateful for the journey we walk together with trust,
+              respect, and love.
             </p>
           </motion.div>
         </div>
